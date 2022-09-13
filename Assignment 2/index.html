@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Assignment 2</title>
+
+    <style>
+        body {
+
+            background-color: rgba(159, 164, 214, 0.966);
+
+        }
+
+
+
+        .container {
+
+            margin: 50px;
+
+            padding: 30px;
+
+            display: flex;
+
+            justify-content: center;
+
+        }
+
+
+
+        h2 {
+
+            color: red;
+
+            font-size: larger;
+
+        }
+
+
+
+        button {
+
+            border-radius: 90%;
+
+            background-color: aqua;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <ul>
+
+            <h1>Sentence :</h1>
+
+            <input type="text" id="sentance" placeholder="Enter a sentance ">
+
+
+
+
+            <h1>Letter :</h1>
+
+            <input type="text " id="letter" placeholder="Enter a letter ">
+
+
+
+            <h1>Result :</h1>
+
+            <h2>
+
+            </h2>
+
+
+
+
+            <button>submit</button>
+
+        </ul>
+
+
+
+
+    </div>
+
+    <script>
+
+        const button = document.querySelector('button');
+
+        const sentence = document.querySelector('#sentance');
+
+        const letter = document.querySelector('#letter');
+
+        const display = document.querySelector('h2')
+
+        button.addEventListener('click', function () {
+
+            let myStr = sentance.value;
+
+            let myReg = letter.value;
+
+            let n = myStr.indexOf(myReg)
+
+            if (n == -1) {
+
+                display.textContent = 'the letter does not exist in the sentence'
+
+            } else {
+
+                let s = myStr.slice(n + 1, myStr.length)
+
+                display.textContent = s;
+
+            }
+
+        });
+
+    </script>
+
+</body>
+
+</html>
+
+</html>
