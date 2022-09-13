@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        td,
+        input {
+            border: 1px solid black;
+            margin: 0px;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <table id="tbl">
+        <tr>
+            <th>S. No.</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>City</th>
+            <th>Country</th>
+        </tr>
+        <tr class="tr">
+            <td>1</td>
+            <td>Bill</td>
+            <td>Gates</td>
+            <td>Washington</td>
+            <td>U.S</td>
+        </tr>
+        <tr class="tr">
+            <td>2</td>
+            <td>Elon</td>
+            <td>Mask</td>
+            <td>Pretoria</td>
+            <td>South Africa</td>
+        </tr>
+        <tr class="tr">
+            <td>3</td>
+            <td>Urvashi</td>
+            <td>Roy</td>
+            <td>Pune</td>
+            <td>India</td>
+        </tr>
+    </table>
+    <div onclick="appendRow()" class="btn1">
+        <button><b>Add row to bottom</b></button>
+    </div>
+    <div onclick="appendRowTop()">
+        <button class="btn2"><b>Add row to top</b></button>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
